@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="library_name">MediaPicker</string>
+    <string name="all_dir_name">모든 사진 또는 비디오</string>
+    <string name="all_video">모든 비디오</string>
+    <string name="all_image">모든 사진</string>
+    <string name="select_title">사진 또는 비디오 선택</string>
+    <string name="select_video_title">비디오 선택</string>
+    <string name="select_image_title">사진 선택</string>
+    <string name="video_dir_name">모든 비디오</string>
+    <string name="msg_amount_limit">최대 선택 수를 초과했습니다</string>
+    <string name="msg_size_limit">파일의 최대 사이즈</string>
+    <string name="select_null">파일을 선택해 주세요</string>
+    <string name="done">완료</string>
+    <string name="count_string"></string>
+    <string name="preview">미리보기</string>
+    <string name="select">선택</string>
+    <string name="video">비디오</string>
+    <string name="cant_play_video">재생할 수 없습니다!</string>
+    <string name="READ_EXTERNAL_STORAGE">저장공간 읽기 권한이 필요합니다</string>
+</resources>
