@@ -9,7 +9,6 @@ import android.media.ThumbnailUtils;
 import android.net.Uri;
 import android.provider.MediaStore;
 import android.util.Base64;
-import android.util.Log;
 
 import com.dmcbig.mediapicker.PickerActivity;
 import com.dmcbig.mediapicker.PickerConfig;
@@ -27,7 +26,6 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.FilenameFilter;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -38,12 +36,10 @@ import java.util.ArrayList;
 public class MediaPicker extends CordovaPlugin {
     private  CallbackContext callback;
     private  int thumbnailQuality=50;
-    private  int quality=100;//default original
-    private  int thumbnailW=200;
-    private  int thumbnailH=200;
+    private  int thumbnailW=400;
+    private  int thumbnailH=400;
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-        getPublicArgs(args);
 
         if (action.equals("getMedias")) {
             this.getMedias(args, callbackContext);
@@ -55,10 +51,20 @@ public class MediaPicker extends CordovaPlugin {
             this.getMedias(args, callbackContext);
             return true;
         }else if(action.equals("extractThumbnail")){
-            this.extractThumbnail(args, callbackContext);
+            cordova.getThreadPool().execute(new Runnable() {
+                @Override
+                public void run() {
+                    extractThumbnail(args, callbackContext);
+                }
+            });
             return true;
         }else if(action.equals("compressImage")){
-            this.compressImage(args, callbackContext);
+            cordova.getThreadPool().execute(new Runnable() {
+                @Override
+                public void run() {
+                    compressImage(args, callbackContext);
+                }
+            });
             return true;
         }else if(action.equals("fileToBlob")){
             this.fileToBlob(args.getString(0), callbackContext);
@@ -119,38 +125,6 @@ public class MediaPicker extends CordovaPlugin {
         this.cordova.startActivityForResult(this,intent,200);
     }
 
-    public  void getPublicArgs(JSONArray args){
-        JSONObject jsonObject=new JSONObject();
-        if (args != null && args.length() > 0) {
-            try {
-                jsonObject = args.getJSONObject(0);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            try {
-                thumbnailQuality = jsonObject.getInt("thumbnailQuality");
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            try {
-                thumbnailW = jsonObject.getInt("thumbnailW");
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            try {
-                thumbnailH = jsonObject.getInt("thumbnailH");
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            try {
-                quality = jsonObject.getInt("quality");
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
         super.onActivityResult(requestCode, resultCode, intent);
@@ -187,7 +161,7 @@ public class MediaPicker extends CordovaPlugin {
     }
 
     public  void extractThumbnail(JSONArray args, CallbackContext callbackContext){
-        JSONObject jsonObject=new JSONObject();
+        JSONObject jsonObject = new JSONObject();
         if (args != null && args.length() > 0) {
             try {
                 jsonObject = args.getJSONObject(0);
@@ -196,11 +170,13 @@ public class MediaPicker extends CordovaPlugin {
             }
             try {
                 thumbnailQuality = jsonObject.getInt("thumbnailQuality");
+                thumbnailW = jsonObject.getInt("thumbnailW");
+                thumbnailH = jsonObject.getInt("thumbnailH");
             } catch (JSONException e) {
                 e.printStackTrace();
             }
             try {
-                String path =jsonObject.getString("path");
+                String path = jsonObject.getString("path");
                 jsonObject.put("exifRotate",getBitmapRotate(path));
                 int mediatype = "video".equals(jsonObject.getString("mediaType"))?3:1;
                 jsonObject.put("thumbnailBase64",extractThumbnail(path,mediatype,thumbnailQuality));
@@ -352,6 +328,7 @@ public class MediaPicker extends CordovaPlugin {
             String object = exifInterface.getAttribute(tag);
             callbackContext.success(object);
         } catch (Exception e) {
+            callbackContext.error("getExifForKey error"+e);
             e.printStackTrace();
         }
     }
