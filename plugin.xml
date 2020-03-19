@@ -23,6 +23,21 @@
     <resource-file src="src/android/Library/res/values-tr/multiimagechooser_strings_tr.xml" target="res/values-tr/multiimagechooser_strings_tr.xml"/>
     <resource-file src="src/android/Library/res/values-de/multiimagechooser_strings_de.xml" target="res/values-de/multiimagechooser_strings_de.xml"/>
 	<resource-file src="src/android/Library/res/values-ko/multiimagechooser_strings_ko.xml" target="res/values-ko/multiimagechooser_strings_ko.xml"/>
+	<resource-file src="src/android/Library/res/values-ja/multiimagechooser_strings_ja.xml" target="res/values-ja/multiimagechooser_strings_ja.xml"/>
+	<resource-file src="src/android/Library/res/values-ar/multiimagechooser_strings_ar.xml" target="res/values-ar/multiimagechooser_strings_ar.xml"/>
+	<resource-file src="src/android/Library/res/values-cs/multiimagechooser_strings_cs.xml" target="res/values-cs/multiimagechooser_strings_cs.xml"/>
+	<resource-file src="src/android/Library/res/values-fa/multiimagechooser_strings_fa.xml" target="res/values-fa/multiimagechooser_strings_fa.xml"/>
+	<resource-file src="src/android/Library/res/values-fi/multiimagechooser_strings_fi.xml" target="res/values-fi/multiimagechooser_strings_fi.xml"/>
+	<resource-file src="src/android/Library/res/values-fr/multiimagechooser_strings_fr.xml" target="res/values-fr/multiimagechooser_strings_fr.xml"/>
+	<resource-file src="src/android/Library/res/values-in/multiimagechooser_strings_in.xml" target="res/values-in/multiimagechooser_strings_in.xml"/>
+	<resource-file src="src/android/Library/res/values-it/multiimagechooser_strings_it.xml" target="res/values-it/multiimagechooser_strings_it.xml"/>
+	<resource-file src="src/android/Library/res/values-lt/multiimagechooser_strings_lt.xml" target="res/values-lt/multiimagechooser_strings_lt.xml"/>
+	<resource-file src="src/android/Library/res/values-ms/multiimagechooser_strings_ms.xml" target="res/values-ms/multiimagechooser_strings_ms.xml"/>
+	<resource-file src="src/android/Library/res/values-nl/multiimagechooser_strings_nl.xml" target="res/values-nl/multiimagechooser_strings_nl.xml"/>
+	<resource-file src="src/android/Library/res/values-no/multiimagechooser_strings_no.xml" target="res/values-no/multiimagechooser_strings_no.xml"/>
+	<resource-file src="src/android/Library/res/values-ru/multiimagechooser_strings_ru.xml" target="res/values-ru/multiimagechooser_strings_ru.xml"/>
+	<resource-file src="src/android/Library/res/values-uk/multiimagechooser_strings_uk.xml" target="res/values-uk/multiimagechooser_strings_uk.xml"/>
+	<resource-file src="src/android/Library/res/values-vi/multiimagechooser_strings_vi.xml" target="res/values-vi/multiimagechooser_strings_vi.xml"/>
   </platform>
 
   <platform name="ios">
@@ -57,6 +72,22 @@
     <resource-file src="src/ios/DMCMediaPicker/tr.lproj"/>
     <resource-file src="src/ios/DMCMediaPicker/de.lproj"/>
 	<resource-file src="src/ios/DMCMediaPicker/ko.lproj"/>
+	<resource-file src="src/ios/DMCMediaPicker/nl.lproj"/>
+	<resource-file src="src/ios/DMCMediaPicker/no.lproj"/>
+	<resource-file src="src/ios/DMCMediaPicker/ru.lproj"/>
+	<resource-file src="src/ios/DMCMediaPicker/ms.lproj"/>
+	<resource-file src="src/ios/DMCMediaPicker/vi.lproj"/>
+	<resource-file src="src/ios/DMCMediaPicker/ar.lproj"/>
+	<resource-file src="src/ios/DMCMediaPicker/uk.lproj"/>
+	<resource-file src="src/ios/DMCMediaPicker/it.lproj"/>
+	<resource-file src="src/ios/DMCMediaPicker/id.lproj"/>
+	<resource-file src="src/ios/DMCMediaPicker/ja.lproj"/>
+	<resource-file src="src/ios/DMCMediaPicker/zh-Hant.lproj"/>
+	<resource-file src="src/ios/DMCMediaPicker/cs.lproj"/>
+	<resource-file src="src/ios/DMCMediaPicker/pl.lproj"/>
+	<resource-file src="src/ios/DMCMediaPicker/fr.lproj"/>
+	<resource-file src="src/ios/DMCMediaPicker/fi.lproj"/>
+
     <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
       <string>$IOS_PHOTO_LIBRARY_USAGE_DESCRIPTION</string>
     </config-file>  

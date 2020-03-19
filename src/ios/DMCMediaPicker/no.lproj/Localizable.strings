@@ -1,0 +1,12 @@
+"Cancel"="Avbryt";
+"Done"="Ferdig";
+"All"="Alle bilder";
+"Video"="video";
+"ok"="OK";
+"maxSelectAlert"="Du kan bare velge %d bilder";
+"maxSizeAlert"="You can only select images up to %.02f mb in size";
+"Unable to access album" = "Kan ikke få tilgang til albumet";
+"Please allow to access your album" = "Please allow to access your album in \"Settings -> Privacy -> Album\"";
+"Setting" = "Innstillinger";
+"Preview" = "Forhåndsvisning";
+"photo_download_failed" = "There was an error downloading selected photos from your iCloud Photo Library. This could be due to poor internet connectivity. Please check your internet connection and try again";

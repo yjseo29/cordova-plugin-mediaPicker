@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="library_name">MediaPicker</string>
+    <string name="all_dir_name">すべての画像とビデオ</string>
+    <string name="all_video">すべてのビデオ</string>
+    <string name="all_image">すべての画像</string>
+    <string name="select_title">画像とビデオを選択</string>
+    <string name="select_video_title">ビデオを選択</string>
+    <string name="select_image_title">画像を選択</string>
+    <string name="video_dir_name">すべてのビデオ</string>
+    <string name="msg_amount_limit">選択肢の最大数に達しました</string>
+    <string name="msg_size_limit">最大ファイルサイズは</string>
+    <string name="select_null">ファイルを選択してください</string>
+    <string name="done">完了</string>
+    <string name="count_string"></string>
+    <string name="preview">プレビュー</string>
+    <string name="select">選択する</string>
+    <string name="video">ビデオ</string>
+    <string name="cant_play_video">No program to play!</string>
+    <string name="READ_EXTERNAL_STORAGE">読み取りストレージ権限を開く必要があります</string>
+</resources>

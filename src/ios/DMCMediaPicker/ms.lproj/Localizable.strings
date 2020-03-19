@@ -1,0 +1,12 @@
+"Cancel"="Batal";
+"Done"="Selesai";
+"All"="Semua gambar";
+"Video"="Video";
+"ok"="OK";
+"maxSelectAlert"="Anda hanya boleh memilih %d imej";
+"maxSizeAlert"="You can only select images up to %.02f mb in size";
+"Unable to access album" = "Tidak boleh mengakses album";
+"Please allow to access your album" = "Please allow to access your album in \"Settings -> Privacy -> Album\"";
+"Setting" = "Menetapkan";
+"Preview" = "Pratonton";
+"photo_download_failed" = "There was an error downloading selected photos from your iCloud Photo Library. This could be due to poor internet connectivity. Please check your internet connection and try again";

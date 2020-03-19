@@ -1,0 +1,12 @@
+"Cancel"="Hủy";
+"Done"="Xong";
+"All"="Tất cả ảnh";
+"Video"="Video";
+"ok"="Được";
+"maxSelectAlert"="Bạn chỉ có thể chọn %d hình ảnh";
+"maxSizeAlert"="You can only select images up to %.02f mb in size";
+"Unable to access album" = "Không thể truy cập album";
+"Please allow to access your album" = "Please allow to access your album in \"Settings -> Privacy -> Album\"";
+"Setting" = "Cài đặt";
+"Preview" = "Xem trước";
+"photo_download_failed" = "There was an error downloading selected photos from your iCloud Photo Library. This could be due to poor internet connectivity. Please check your internet connection and try again";

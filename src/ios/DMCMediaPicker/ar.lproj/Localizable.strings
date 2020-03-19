@@ -1,0 +1,12 @@
+"Cancel"="إلغاء";
+"Done"="تم";
+"All"="جميع الصور";
+"Video"="فيديو";
+"ok"="حسناً";
+"maxSelectAlert"="يمكنك فقط اختيار %d صور";
+"maxSizeAlert"="You can only select images up to %.02f mb in size";
+"Unable to access album" = "تعذر الوصول إلى الألبوم";
+"Please allow to access your album" = "Please allow to access your album in \"Settings -> Privacy -> Album\"";
+"Setting" = "ضبط";
+"Preview" = "معاينة";
+"photo_download_failed" = "There was an error downloading selected photos from your iCloud Photo Library. This could be due to poor internet connectivity. Please check your internet connection and try again";
