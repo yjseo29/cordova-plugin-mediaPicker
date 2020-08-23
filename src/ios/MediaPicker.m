@@ -275,11 +275,14 @@
 {
     callbackId=command.callbackId;
     NSMutableDictionary *options = [command.arguments objectAtIndex: 0];
-    UIImage * image=[self getThumbnailImage:[options objectForKey:@"path"] type:[options objectForKey:@"mediaType"]];
-    NSString *thumbnail=[self thumbnailImage:image quality:[[options objectForKey:@"thumbnailQuality"] integerValue]];
+    
+    [self.commandDelegate runInBackground:^{
+        UIImage * image=[self getThumbnailImage:[options objectForKey:@"path"] type:[options objectForKey:@"mediaType"]];
+        NSString *thumbnail=[self thumbnailImage:image quality:[[options objectForKey:@"thumbnailQuality"] integerValue]];
 
-    [options setObject:thumbnail forKey:@"thumbnailBase64"];
-    [self.commandDelegate sendPluginResult:[CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:options] callbackId:callbackId];
+        [options setObject:thumbnail forKey:@"thumbnailBase64"];
+        [self.commandDelegate sendPluginResult:[CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:options] callbackId:callbackId];
+    }];
 }
 
 - (void)compressImage:(CDVInvokedUrlCommand*)command
