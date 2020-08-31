@@ -6,9 +6,9 @@
     <string name="all_image">Toutes les images</string>
     <string name="select_title">Select Image and Video</string>
     <string name="select_video_title">Select Video</string>
-    <string name="select_image_title">Sélectionnez l\'image</string>
+    <string name="select_image_title">Sélectionner une image</string>
     <string name="video_dir_name">All Video</string>
-    <string name="msg_amount_limit">A atteint le nombre maximum de choix</string>
+    <string name="msg_amount_limit">Vous avez atteint le nombre maximum de choix</string>
     <string name="msg_size_limit">The maximum file size is only</string>
     <string name="select_null">veuillez sélectionner un fichier</string>
     <string name="done">Terminé</string>
