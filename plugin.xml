@@ -38,6 +38,7 @@
 	<resource-file src="src/android/Library/res/values-ru/multiimagechooser_strings_ru.xml" target="res/values-ru/multiimagechooser_strings_ru.xml"/>
 	<resource-file src="src/android/Library/res/values-uk/multiimagechooser_strings_uk.xml" target="res/values-uk/multiimagechooser_strings_uk.xml"/>
 	<resource-file src="src/android/Library/res/values-vi/multiimagechooser_strings_vi.xml" target="res/values-vi/multiimagechooser_strings_vi.xml"/>
+	<resource-file src="src/android/Library/res/values-be/multiimagechooser_strings_be.xml" target="res/values-be/multiimagechooser_strings_be.xml"/>
   </platform>
 
   <platform name="ios">
