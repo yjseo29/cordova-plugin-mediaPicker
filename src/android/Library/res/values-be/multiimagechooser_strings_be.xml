@@ -17,5 +17,5 @@
     <string name="select">Абраць у альбоме</string>
     <string name="video">video</string>
     <string name="cant_play_video">No program to play!</string>
-    <string name="READ_EXTERNAL_STORAGE">Need to open read storage permissions</string>
+    <string name="READ_EXTERNAL_STORAGE">Неабходна дазволіць доступ для чытання сховішча</string>
 </resources>
