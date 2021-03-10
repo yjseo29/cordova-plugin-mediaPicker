@@ -1,0 +1,12 @@
+"Cancel"="בטל";
+"Done"="בוצע";
+"All"="כל התמונה";
+"Video"="Video";
+"ok"="אישור";
+"maxSelectAlert"="אפשר לבחור רק %d תמונות";
+"maxSizeAlert"="You can only select images up to %.02f mb in size";
+"Unable to access album" = "Unable to access album";
+"Please allow to access your album" = "Please allow to access your album in \"Settings -> Privacy -> Album\"";
+"Setting" = "הגדרות";
+"Preview" = "הצג";
+"photo_download_failed" = "There was an error downloading selected photos from your iCloud Photo Library. This could be due to poor internet connectivity. Please check your internet connection and try again";

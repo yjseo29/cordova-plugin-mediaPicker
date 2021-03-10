@@ -39,6 +39,8 @@
 	<resource-file src="src/android/Library/res/values-uk/multiimagechooser_strings_uk.xml" target="res/values-uk/multiimagechooser_strings_uk.xml"/>
 	<resource-file src="src/android/Library/res/values-vi/multiimagechooser_strings_vi.xml" target="res/values-vi/multiimagechooser_strings_vi.xml"/>
 	<resource-file src="src/android/Library/res/values-be/multiimagechooser_strings_be.xml" target="res/values-be/multiimagechooser_strings_be.xml"/>
+	<resource-file src="src/android/Library/res/values-iw/multiimagechooser_strings_iw.xml" target="res/values-iw/multiimagechooser_strings_iw.xml"/>
+	<resource-file src="src/android/Library/res/values-hu/multiimagechooser_strings_hu.xml" target="res/values-hu/multiimagechooser_strings_hu.xml"/>
   </platform>
 
   <platform name="ios">
@@ -88,6 +90,8 @@
 	<resource-file src="src/ios/DMCMediaPicker/pl.lproj"/>
 	<resource-file src="src/ios/DMCMediaPicker/fr.lproj"/>
 	<resource-file src="src/ios/DMCMediaPicker/fi.lproj"/>
+	<resource-file src="src/ios/DMCMediaPicker/he.lproj"/>
+	<resource-file src="src/ios/DMCMediaPicker/hu.lproj"/>
 
     <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
       <string>$IOS_PHOTO_LIBRARY_USAGE_DESCRIPTION</string>
