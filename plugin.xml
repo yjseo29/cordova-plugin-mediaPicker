@@ -42,6 +42,7 @@
 	<resource-file src="src/android/Library/res/values-iw/multiimagechooser_strings_iw.xml" target="res/values-iw/multiimagechooser_strings_iw.xml"/>
 	<resource-file src="src/android/Library/res/values-hu/multiimagechooser_strings_hu.xml" target="res/values-hu/multiimagechooser_strings_hu.xml"/>
 	<resource-file src="src/android/Library/res/values-bn/multiimagechooser_strings_bn.xml" target="res/values-bn/multiimagechooser_strings_bn.xml"/>
+	<resource-file src="src/android/Library/res/values-zh-rTW/multiimagechooser_strings_zh-rTW" target="res/values-zh-rTW/multiimagechooser_strings_zh-rTW"/>
   </platform>
 
   <platform name="ios">
