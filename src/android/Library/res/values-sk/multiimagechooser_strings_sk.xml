@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="library_name">MediaPicker</string>
+    <string name="all_dir_name">All Image and Video</string>
+    <string name="all_video">All Video</string>
+    <string name="all_image">Všetky obrázky</string>
+    <string name="select_title">Select Image and Video</string>
+    <string name="select_video_title">Select Video</string>
+    <string name="select_image_title">Vyberte obrázok</string>
+    <string name="video_dir_name">All Video</string>
+    <string name="msg_amount_limit">Dosiahli ste maximálny počet možností</string>
+    <string name="msg_size_limit">The maximum file size is only</string>
+    <string name="select_null">Prosím, vyberte súbor</string>
+    <string name="done">Hotovo</string>
+    <string name="count_string"></string>
+    <string name="preview">Náhľad</string>
+    <string name="select">Vybrať</string>
+    <string name="video">video</string>
+    <string name="cant_play_video">No program to play!</string>
+    <string name="READ_EXTERNAL_STORAGE">Potrebujete otvoriť oprávnenie úložiska na čítanie</string>
+</resources>
